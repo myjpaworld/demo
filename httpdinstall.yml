@@ -1,0 +1,10 @@
+---
+- name: install, start and enable apache
+  hosts: demo
+  become: yes
+  
+  tasks:
+    - name: latest package present
+	    yum:
+	      name: httpd
+		    state: latest
