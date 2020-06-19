@@ -1,0 +1,6 @@
+---
+- hosts: pwdev
+  remote_user: ansible
+  become: true
+  roles:
+    - httpd
